@@ -1,0 +1,414 @@
+Patient_ID,Medication,Prompt,Patient_Problems,LLM_Response,Mapped_Problems
+2,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Depression']
+Which problem(s) from the list does this medication treat?",['Depression'],"Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+4,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Migraine', 'Cholecystitis']
+Which problem(s) from the list does this medication treat?","['Migraine', 'Cholecystitis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+5,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']
+Which problem(s) from the list does this medication treat?","['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+5,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']
+Which problem(s) from the list does this medication treat?","['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+9,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Diabetes', 'Pneumothorax']
+Which problem(s) from the list does this medication treat?","['Diabetes', 'Pneumothorax']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+9,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Diabetes', 'Pneumothorax']
+Which problem(s) from the list does this medication treat?","['Diabetes', 'Pneumothorax']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+12,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Depression', 'VTE', 'Schizophrenia', 'Takayasu Arteritis', 'Osteoporosis', 'Obesity', 'Basal Cell Carcinoma', ""Cushing's Syndrome"", ""Crohn's Disease"", 'Pheochromocytoma', 'Sleep Apnea', 'Gout', 'Lupus', 'Pleural Effusion', 'Pulmonary Hypertension', 'GERD', 'Interstitial Lung Disease', 'Addison Disease']
+Which problem(s) from the list does this medication treat?","['Depression', 'VTE', 'Schizophrenia', 'Takayasu Arteritis', 'Osteoporosis', 'Obesity', 'Basal Cell Carcinoma', ""Cushing's Syndrome"", ""Crohn's Disease"", 'Pheochromocytoma', 'Sleep Apnea', 'Gout', 'Lupus', 'Pleural Effusion', 'Pulmonary Hypertension', 'GERD', 'Interstitial Lung Disease', 'Addison Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+13,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Bipolar Disorder', 'Cholelithiasis', 'Interstitial Lung Disease', 'Leukemia', 'Lymphoma', ""Crohn's Disease"", 'Diabetes', 'Myeloma', 'IBS']
+Which problem(s) from the list does this medication treat?","['Bipolar Disorder', 'Cholelithiasis', 'Interstitial Lung Disease', 'Leukemia', 'Lymphoma', ""Crohn's Disease"", 'Diabetes', 'Myeloma', 'IBS']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+14,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Cholecystitis', 'Gaucher Disease', 'Cancer', 'Goodpasture Syndrome', 'Pulmonary Fibrosis', 'Lupus', 'Osteoarthritis', 'Hemochromatosis', 'IBS']
+Which problem(s) from the list does this medication treat?","['Cholecystitis', 'Gaucher Disease', 'Cancer', 'Goodpasture Syndrome', 'Pulmonary Fibrosis', 'Lupus', 'Osteoarthritis', 'Hemochromatosis', 'IBS']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+19,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Myeloma']
+Which problem(s) from the list does this medication treat?",['Myeloma'],"Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+19,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Myeloma']
+Which problem(s) from the list does this medication treat?",['Myeloma'],"Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+20,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Cholelithiasis', 'Essential Thrombocythemia', 'GERD', 'Hyperthyroidism', 'Ehlers-Danlos Syndrome', 'Schizophrenia', 'Ovarian Cancer', 'Basal Cell Carcinoma', 'Osteoarthritis', 'Hyperlipidemia', 'Multiple Sclerosis', 'Psoriasis', 'Ankylosing Spondylitis', 'Cystic Fibrosis', 'Heart Failure', 'Gaucher Disease', 'Dementia']
+Which problem(s) from the list does this medication treat?","['Cholelithiasis', 'Essential Thrombocythemia', 'GERD', 'Hyperthyroidism', 'Ehlers-Danlos Syndrome', 'Schizophrenia', 'Ovarian Cancer', 'Basal Cell Carcinoma', 'Osteoarthritis', 'Hyperlipidemia', 'Multiple Sclerosis', 'Psoriasis', 'Ankylosing Spondylitis', 'Cystic Fibrosis', 'Heart Failure', 'Gaucher Disease', 'Dementia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+23,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+23,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+25,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Cystic Fibrosis', 'Wilson Disease', 'Liver Disease']
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Wilson Disease', 'Liver Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+27,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']
+Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+27,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']
+Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+29,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+29,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+29,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+29,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+30,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']
+Which problem(s) from the list does this medication treat?","['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+30,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']
+Which problem(s) from the list does this medication treat?","['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+31,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: [""Crohn's Disease"", 'Hemophilia', 'Melanoma', 'Depression', 'Sleep Apnea', 'Endometriosis', 'Adrenal Insufficiency', 'Diabetes', ""Parkinson's Disease"", 'CKD', 'COPD', 'Anxiety', 'Cholecystitis', 'Appendicitis', 'IBS', 'Stroke', 'Pheochromocytoma']
+Which problem(s) from the list does this medication treat?","[""Crohn's Disease"", 'Hemophilia', 'Melanoma', 'Depression', 'Sleep Apnea', 'Endometriosis', 'Adrenal Insufficiency', 'Diabetes', ""Parkinson's Disease"", 'CKD', 'COPD', 'Anxiety', 'Cholecystitis', 'Appendicitis', 'IBS', 'Stroke', 'Pheochromocytoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+33,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']
+Which problem(s) from the list does this medication treat?","['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+33,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']
+Which problem(s) from the list does this medication treat?","['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+34,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Obesity', 'Myelofibrosis', 'Sleep Apnea', 'Goodpasture Syndrome', ""Cushing's Syndrome"", 'Cancer', 'Bipolar Disorder', 'Gout', 'Pneumothorax', 'Prostate Cancer', 'Depression', 'Liver Disease', 'Hyperthyroidism', 'Marfan Syndrome', 'Atrial Fibrillation', ""Parkinson's Disease""]
+Which problem(s) from the list does this medication treat?","['Obesity', 'Myelofibrosis', 'Sleep Apnea', 'Goodpasture Syndrome', ""Cushing's Syndrome"", 'Cancer', 'Bipolar Disorder', 'Gout', 'Pneumothorax', 'Prostate Cancer', 'Depression', 'Liver Disease', 'Hyperthyroidism', 'Marfan Syndrome', 'Atrial Fibrillation', ""Parkinson's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+38,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Takayasu Arteritis', 'Marfan Syndrome', 'Cholecystitis', 'Hemophilia', 'Osteoporosis', 'Alcohol Use Disorder', 'Hepatitis C', 'Diabetes', 'Pulmonary Hypertension', 'Endometriosis', 'Migraine', 'Pheochromocytoma']
+Which problem(s) from the list does this medication treat?","['Takayasu Arteritis', 'Marfan Syndrome', 'Cholecystitis', 'Hemophilia', 'Osteoporosis', 'Alcohol Use Disorder', 'Hepatitis C', 'Diabetes', 'Pulmonary Hypertension', 'Endometriosis', 'Migraine', 'Pheochromocytoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+42,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Sickle Cell Disease', 'Cancer', 'Bladder Cancer', 'Melanoma']
+Which problem(s) from the list does this medication treat?","['Sickle Cell Disease', 'Cancer', 'Bladder Cancer', 'Melanoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+43,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+43,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+43,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+45,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Alcohol Use Disorder', 'Thyroid Disease']
+Which problem(s) from the list does this medication treat?","['Alcohol Use Disorder', 'Thyroid Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+46,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Gout', 'Wilson Disease', 'Anxiety', 'Pneumothorax', 'Diverticulitis', 'IBS', ""Behcet's Disease"", 'Tuberculosis', 'Ulcerative Colitis', 'Hypertension', 'VTE', 'Hepatitis C', 'Bladder Cancer', 'GERD', 'Marfan Syndrome', 'Ankylosing Spondylitis', 'Atrial Fibrillation', 'Coronary Artery Disease']
+Which problem(s) from the list does this medication treat?","['Gout', 'Wilson Disease', 'Anxiety', 'Pneumothorax', 'Diverticulitis', 'IBS', ""Behcet's Disease"", 'Tuberculosis', 'Ulcerative Colitis', 'Hypertension', 'VTE', 'Hepatitis C', 'Bladder Cancer', 'GERD', 'Marfan Syndrome', 'Ankylosing Spondylitis', 'Atrial Fibrillation', 'Coronary Artery Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+53,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Depression', 'Hepatitis C']
+Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis C']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+56,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']
+Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+56,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']
+Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+58,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Gout', 'Pleural Effusion', 'Lymphoma']
+Which problem(s) from the list does this medication treat?","['Gout', 'Pleural Effusion', 'Lymphoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+58,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Gout', 'Pleural Effusion', 'Lymphoma']
+Which problem(s) from the list does this medication treat?","['Gout', 'Pleural Effusion', 'Lymphoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+71,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']
+Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+71,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']
+Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+71,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']
+Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+77,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']
+Which problem(s) from the list does this medication treat?","['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+77,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']
+Which problem(s) from the list does this medication treat?","['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+83,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Cholelithiasis', 'Osteoarthritis', 'Pancreatitis', 'Hypothyroidism']
+Which problem(s) from the list does this medication treat?","['Cholelithiasis', 'Osteoarthritis', 'Pancreatitis', 'Hypothyroidism']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+84,Metoprolol,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metoprolol
+Info: Used to manage hypertension (high blood pressure).
+Patient Problems: ['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]
+Which problem(s) from the list does this medication treat?","['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+84,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]
+Which problem(s) from the list does this medication treat?","['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+85,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+85,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+86,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Squamous Cell Carcinoma', 'Leukemia', 'Cancer', 'Alport Syndrome', 'Aplastic Anemia', 'Pheochromocytoma', 'Anxiety', 'Thyroid Disease', 'Ankylosing Spondylitis', 'Marfan Syndrome', 'Lymphoma', 'Testicular Cancer', 'Peptic Ulcer', 'Prostate Cancer', 'Pneumothorax']
+Which problem(s) from the list does this medication treat?","['Squamous Cell Carcinoma', 'Leukemia', 'Cancer', 'Alport Syndrome', 'Aplastic Anemia', 'Pheochromocytoma', 'Anxiety', 'Thyroid Disease', 'Ankylosing Spondylitis', 'Marfan Syndrome', 'Lymphoma', 'Testicular Cancer', 'Peptic Ulcer', 'Prostate Cancer', 'Pneumothorax']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+88,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']
+Which problem(s) from the list does this medication treat?","['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+88,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']
+Which problem(s) from the list does this medication treat?","['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+89,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Goodpasture Syndrome', 'Peripheral Artery Disease', 'Diverticulitis', 'Takayasu Arteritis', 'Ankylosing Spondylitis', 'Gout', 'Nephrolithiasis', 'Schizophrenia', 'Fabry Disease', 'IBS', 'Myeloma', 'Ovarian Cancer', 'Sickle Cell Disease', 'Coronary Artery Disease', 'Endometriosis']
+Which problem(s) from the list does this medication treat?","['Goodpasture Syndrome', 'Peripheral Artery Disease', 'Diverticulitis', 'Takayasu Arteritis', 'Ankylosing Spondylitis', 'Gout', 'Nephrolithiasis', 'Schizophrenia', 'Fabry Disease', 'IBS', 'Myeloma', 'Ovarian Cancer', 'Sickle Cell Disease', 'Coronary Artery Disease', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+90,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Ankylosing Spondylitis', 'Schizophrenia']
+Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Schizophrenia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+91,Losartan,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Losartan
+Info: Prescribed for hypertension (high blood pressure).
+Patient Problems: ['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+91,Metformin,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Metformin
+Info: Treats Type 2 Diabetes Mellitus.
+Patient Problems: ['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+94,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']
+Which problem(s) from the list does this medication treat?","['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+94,Furosemide,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Furosemide
+Info: Used to treat fluid overload or edema, such as in heart failure.
+Patient Problems: ['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']
+Which problem(s) from the list does this medication treat?","['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+96,Levothyroxine,"You are a clinical decision support assistant.
+Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
+
+Medication: Levothyroxine
+Info: Treats hypothyroidism (underactive thyroid).
+Patient Problems: ['Cholecystitis', 'Asthma', 'Adrenal Insufficiency', 'None', 'Ulcerative Colitis', 'CKD', 'Pheochromocytoma', 'Diverticulitis', 'Diabetes', 'Prostate Cancer', 'Osteoarthritis', 'Peripheral Artery Disease']
+Which problem(s) from the list does this medication treat?","['Cholecystitis', 'Asthma', 'Adrenal Insufficiency', 'None', 'Ulcerative Colitis', 'CKD', 'Pheochromocytoma', 'Diverticulitis', 'Diabetes', 'Prostate Cancer', 'Osteoarthritis', 'Peripheral Artery Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
