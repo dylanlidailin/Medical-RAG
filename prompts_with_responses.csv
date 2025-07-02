@@ -5,410 +5,410 @@ Answer “I don’t know” if the question asked is not recorded in the mini-kn
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Depression']
-Which problem(s) from the list does this medication treat?",['Depression'],"Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?",['Depression'],The medication does not treat any problem from the list.,[]
 4,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Migraine', 'Cholecystitis']
-Which problem(s) from the list does this medication treat?","['Migraine', 'Cholecystitis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Migraine', 'Cholecystitis']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 5,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']
-Which problem(s) from the list does this medication treat?","['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']",I don't know,[]
 5,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']
-Which problem(s) from the list does this medication treat?","['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Testicular Cancer', 'Thalassemia', 'Adrenal Insufficiency', 'Hyperthyroidism', 'Bipolar Disorder']",I don't know,[]
 9,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Diabetes', 'Pneumothorax']
-Which problem(s) from the list does this medication treat?","['Diabetes', 'Pneumothorax']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Diabetes', 'Pneumothorax']",The medication Metformin treats the problem 'Diabetes' from the list.,['Diabetes']
 9,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Diabetes', 'Pneumothorax']
-Which problem(s) from the list does this medication treat?","['Diabetes', 'Pneumothorax']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Diabetes', 'Pneumothorax']",The medication Levothyroxine treats hypothyroidism (underactive thyroid).,[]
 12,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Depression', 'VTE', 'Schizophrenia', 'Takayasu Arteritis', 'Osteoporosis', 'Obesity', 'Basal Cell Carcinoma', ""Cushing's Syndrome"", ""Crohn's Disease"", 'Pheochromocytoma', 'Sleep Apnea', 'Gout', 'Lupus', 'Pleural Effusion', 'Pulmonary Hypertension', 'GERD', 'Interstitial Lung Disease', 'Addison Disease']
-Which problem(s) from the list does this medication treat?","['Depression', 'VTE', 'Schizophrenia', 'Takayasu Arteritis', 'Osteoporosis', 'Obesity', 'Basal Cell Carcinoma', ""Cushing's Syndrome"", ""Crohn's Disease"", 'Pheochromocytoma', 'Sleep Apnea', 'Gout', 'Lupus', 'Pleural Effusion', 'Pulmonary Hypertension', 'GERD', 'Interstitial Lung Disease', 'Addison Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Depression', 'VTE', 'Schizophrenia', 'Takayasu Arteritis', 'Osteoporosis', 'Obesity', 'Basal Cell Carcinoma', ""Cushing's Syndrome"", ""Crohn's Disease"", 'Pheochromocytoma', 'Sleep Apnea', 'Gout', 'Lupus', 'Pleural Effusion', 'Pulmonary Hypertension', 'GERD', 'Interstitial Lung Disease', 'Addison Disease']",The medication Losartan is prescribed for hypertension (high blood pressure). None of the patient's problems listed are directly treated by this medication.,[]
 13,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Bipolar Disorder', 'Cholelithiasis', 'Interstitial Lung Disease', 'Leukemia', 'Lymphoma', ""Crohn's Disease"", 'Diabetes', 'Myeloma', 'IBS']
-Which problem(s) from the list does this medication treat?","['Bipolar Disorder', 'Cholelithiasis', 'Interstitial Lung Disease', 'Leukemia', 'Lymphoma', ""Crohn's Disease"", 'Diabetes', 'Myeloma', 'IBS']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Bipolar Disorder', 'Cholelithiasis', 'Interstitial Lung Disease', 'Leukemia', 'Lymphoma', ""Crohn's Disease"", 'Diabetes', 'Myeloma', 'IBS']",The medication Metformin treats 'Diabetes' from the list of patient problems.,['Diabetes']
 14,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Cholecystitis', 'Gaucher Disease', 'Cancer', 'Goodpasture Syndrome', 'Pulmonary Fibrosis', 'Lupus', 'Osteoarthritis', 'Hemochromatosis', 'IBS']
-Which problem(s) from the list does this medication treat?","['Cholecystitis', 'Gaucher Disease', 'Cancer', 'Goodpasture Syndrome', 'Pulmonary Fibrosis', 'Lupus', 'Osteoarthritis', 'Hemochromatosis', 'IBS']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cholecystitis', 'Gaucher Disease', 'Cancer', 'Goodpasture Syndrome', 'Pulmonary Fibrosis', 'Lupus', 'Osteoarthritis', 'Hemochromatosis', 'IBS']",I don't know,[]
 19,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Myeloma']
-Which problem(s) from the list does this medication treat?",['Myeloma'],"Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?",['Myeloma'],The medication does not treat any problem from the list.,[]
 19,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Myeloma']
-Which problem(s) from the list does this medication treat?",['Myeloma'],"Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?",['Myeloma'],The medication does not treat any problem from the list.,[]
 20,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Cholelithiasis', 'Essential Thrombocythemia', 'GERD', 'Hyperthyroidism', 'Ehlers-Danlos Syndrome', 'Schizophrenia', 'Ovarian Cancer', 'Basal Cell Carcinoma', 'Osteoarthritis', 'Hyperlipidemia', 'Multiple Sclerosis', 'Psoriasis', 'Ankylosing Spondylitis', 'Cystic Fibrosis', 'Heart Failure', 'Gaucher Disease', 'Dementia']
-Which problem(s) from the list does this medication treat?","['Cholelithiasis', 'Essential Thrombocythemia', 'GERD', 'Hyperthyroidism', 'Ehlers-Danlos Syndrome', 'Schizophrenia', 'Ovarian Cancer', 'Basal Cell Carcinoma', 'Osteoarthritis', 'Hyperlipidemia', 'Multiple Sclerosis', 'Psoriasis', 'Ankylosing Spondylitis', 'Cystic Fibrosis', 'Heart Failure', 'Gaucher Disease', 'Dementia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cholelithiasis', 'Essential Thrombocythemia', 'GERD', 'Hyperthyroidism', 'Ehlers-Danlos Syndrome', 'Schizophrenia', 'Ovarian Cancer', 'Basal Cell Carcinoma', 'Osteoarthritis', 'Hyperlipidemia', 'Multiple Sclerosis', 'Psoriasis', 'Ankylosing Spondylitis', 'Cystic Fibrosis', 'Heart Failure', 'Gaucher Disease', 'Dementia']",I don't know,[]
 23,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]
-Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]",The medication Losartan is prescribed for hypertension (high blood pressure). It does not directly treat any of the problems listed in the patient's profile.,[]
 23,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]
-Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Thyroid Disease', 'Lymphoma', 'Cholecystitis', 'Asthma', 'Tuberculosis', 'Hepatitis C', 'Prostate Cancer', 'Testicular Cancer', 'Dementia', 'Myelofibrosis', 'Nephrolithiasis', 'Fabry Disease', ""Parkinson's Disease""]","The medication Metoprolol is used to manage hypertension (high blood pressure). It does not directly treat any of the patient problems listed. However, it can be used in the management of Atrial Fibrillation to control the heart rate.",['Atrial Fibrillation']
 25,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Cystic Fibrosis', 'Wilson Disease', 'Liver Disease']
-Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Wilson Disease', 'Liver Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Wilson Disease', 'Liver Disease']","The medication Metoprolol is used to manage hypertension (high blood pressure). None of the patient's problems listed (Cystic Fibrosis, Wilson Disease, Liver Disease) are treated by this medication.","['Cystic Fibrosis', 'Wilson Disease', 'Liver Disease']"
 27,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']
-Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']",I don't know,[]
 27,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']
-Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Lupus', 'Ehlers-Danlos Syndrome', 'Hepatitis B', 'Rheumatoid Arthritis', 'Sickle Cell Disease', 'COPD', 'Pulmonary Fibrosis', 'Adrenal Insufficiency', 'Pleural Effusion', 'VTE', 'Cancer', 'Squamous Cell Carcinoma', 'Osteoporosis', 'Thalassemia', ""Parkinson's Disease"", 'Alcohol Use Disorder', 'Cystic Fibrosis', 'Essential Thrombocythemia']","The medication Furosemide is used to treat fluid overload or edema, such as in Pleural Effusion.",['Pleural Effusion']
 29,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
-Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']",I don't know,[]
 29,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
-Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","The medication Furosemide is used to treat fluid overload or edema, such as in heart failure. From the list, it can be used to treat Pleural Effusion, which is a condition that can cause fluid overload.",['Pleural Effusion']
 29,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
-Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']",The medication Levothyroxine treats hypothyroidism (underactive thyroid). None of the patient problems listed are treated by this medication.,[]
 29,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']
-Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', 'Gout', 'Sleep Apnea', 'Diverticulitis', 'UTI', 'HIV', 'Bronchiectasis', 'Prostate Cancer', ""Wegener's Granulomatosis"", ""Behcet's Disease"", 'Multiple Sclerosis', 'Osteoporosis']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 30,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']
-Which problem(s) from the list does this medication treat?","['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']","The medication Furosemide is used to treat fluid overload or edema, such as in heart failure. However, none of the patient problems listed (Hyperlipidemia, Alport Syndrome, Marfan Syndrome) are directly treated by this medication.","['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']"
 30,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']
-Which problem(s) from the list does this medication treat?","['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Hyperlipidemia', 'Alport Syndrome', 'Marfan Syndrome']",The medication Losartan is prescribed for hypertension (high blood pressure).,[]
 31,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: [""Crohn's Disease"", 'Hemophilia', 'Melanoma', 'Depression', 'Sleep Apnea', 'Endometriosis', 'Adrenal Insufficiency', 'Diabetes', ""Parkinson's Disease"", 'CKD', 'COPD', 'Anxiety', 'Cholecystitis', 'Appendicitis', 'IBS', 'Stroke', 'Pheochromocytoma']
-Which problem(s) from the list does this medication treat?","[""Crohn's Disease"", 'Hemophilia', 'Melanoma', 'Depression', 'Sleep Apnea', 'Endometriosis', 'Adrenal Insufficiency', 'Diabetes', ""Parkinson's Disease"", 'CKD', 'COPD', 'Anxiety', 'Cholecystitis', 'Appendicitis', 'IBS', 'Stroke', 'Pheochromocytoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","[""Crohn's Disease"", 'Hemophilia', 'Melanoma', 'Depression', 'Sleep Apnea', 'Endometriosis', 'Adrenal Insufficiency', 'Diabetes', ""Parkinson's Disease"", 'CKD', 'COPD', 'Anxiety', 'Cholecystitis', 'Appendicitis', 'IBS', 'Stroke', 'Pheochromocytoma']","The medication Furosemide is used to treat fluid overload or edema, such as in heart failure. From the list provided, it does not directly treat any of the conditions. However, it may be used in the management of Chronic Kidney Disease (CKD) if the patient has fluid overload or edema as a symptom.",['CKD']
 33,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']
-Which problem(s) from the list does this medication treat?","['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']","The medication Furosemide is used to treat fluid overload or edema, such as in heart failure. None of the patient problems listed specifically indicate this condition.",['None']
 33,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']
-Which problem(s) from the list does this medication treat?","['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Bladder Cancer', 'Asthma', 'Cancer', 'None', 'Diabetes', 'Liver Disease', 'Cholecystitis', 'Ovarian Cancer', 'IBS', 'Wilson Disease', 'Psoriasis', 'Pulmonary Fibrosis', 'Hyperthyroidism', 'Squamous Cell Carcinoma', 'Gout', 'Pneumothorax', 'Schizophrenia']",The medication Levothyroxine treats hypothyroidism (underactive thyroid).,[]
 34,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Obesity', 'Myelofibrosis', 'Sleep Apnea', 'Goodpasture Syndrome', ""Cushing's Syndrome"", 'Cancer', 'Bipolar Disorder', 'Gout', 'Pneumothorax', 'Prostate Cancer', 'Depression', 'Liver Disease', 'Hyperthyroidism', 'Marfan Syndrome', 'Atrial Fibrillation', ""Parkinson's Disease""]
-Which problem(s) from the list does this medication treat?","['Obesity', 'Myelofibrosis', 'Sleep Apnea', 'Goodpasture Syndrome', ""Cushing's Syndrome"", 'Cancer', 'Bipolar Disorder', 'Gout', 'Pneumothorax', 'Prostate Cancer', 'Depression', 'Liver Disease', 'Hyperthyroidism', 'Marfan Syndrome', 'Atrial Fibrillation', ""Parkinson's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Obesity', 'Myelofibrosis', 'Sleep Apnea', 'Goodpasture Syndrome', ""Cushing's Syndrome"", 'Cancer', 'Bipolar Disorder', 'Gout', 'Pneumothorax', 'Prostate Cancer', 'Depression', 'Liver Disease', 'Hyperthyroidism', 'Marfan Syndrome', 'Atrial Fibrillation', ""Parkinson's Disease""]",The medication Levothyroxine treats hypothyroidism (underactive thyroid).,[]
 38,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Takayasu Arteritis', 'Marfan Syndrome', 'Cholecystitis', 'Hemophilia', 'Osteoporosis', 'Alcohol Use Disorder', 'Hepatitis C', 'Diabetes', 'Pulmonary Hypertension', 'Endometriosis', 'Migraine', 'Pheochromocytoma']
-Which problem(s) from the list does this medication treat?","['Takayasu Arteritis', 'Marfan Syndrome', 'Cholecystitis', 'Hemophilia', 'Osteoporosis', 'Alcohol Use Disorder', 'Hepatitis C', 'Diabetes', 'Pulmonary Hypertension', 'Endometriosis', 'Migraine', 'Pheochromocytoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Takayasu Arteritis', 'Marfan Syndrome', 'Cholecystitis', 'Hemophilia', 'Osteoporosis', 'Alcohol Use Disorder', 'Hepatitis C', 'Diabetes', 'Pulmonary Hypertension', 'Endometriosis', 'Migraine', 'Pheochromocytoma']","The medication Furosemide is used to treat fluid overload or edema, such as in heart failure. From the list provided, it could potentially be used in the management of Pulmonary Hypertension, as this condition can lead to heart failure. However, the specific use of Furosemide would depend on the individual patient's condition and should be determined by a healthcare professional.",['Pulmonary Hypertension']
 42,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Sickle Cell Disease', 'Cancer', 'Bladder Cancer', 'Melanoma']
-Which problem(s) from the list does this medication treat?","['Sickle Cell Disease', 'Cancer', 'Bladder Cancer', 'Melanoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Sickle Cell Disease', 'Cancer', 'Bladder Cancer', 'Melanoma']","The medication Levothyroxine treats hypothyroidism (underactive thyroid). It does not treat any of the problems listed which are 'Sickle Cell Disease', 'Cancer', 'Bladder Cancer', 'Melanoma'.","['Sickle Cell Disease', 'Cancer', 'Bladder Cancer', 'Melanoma']"
 43,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']
-Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 43,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']
-Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']",The medication Losartan is used to treat Hypertension.,['Hypertension']
 43,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']
-Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cystic Fibrosis', 'Ovarian Cancer', 'Lymphoma', 'Cholelithiasis', 'Stroke', 'Diverticulitis', 'Hypertension', 'Atrial Fibrillation', ""Wegener's Granulomatosis"", 'Basal Cell Carcinoma', 'Squamous Cell Carcinoma', 'Endometriosis']",The medication Metoprolol is used to treat Hypertension and Atrial Fibrillation from the list of patient problems.,"['Hypertension', 'Atrial Fibrillation']"
 45,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Alcohol Use Disorder', 'Thyroid Disease']
-Which problem(s) from the list does this medication treat?","['Alcohol Use Disorder', 'Thyroid Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Alcohol Use Disorder', 'Thyroid Disease']","The medication Furosemide is used to treat fluid overload or edema, such as in heart failure. It does not treat Alcohol Use Disorder or Thyroid Disease.","['Alcohol Use Disorder', 'Thyroid Disease']"
 46,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Gout', 'Wilson Disease', 'Anxiety', 'Pneumothorax', 'Diverticulitis', 'IBS', ""Behcet's Disease"", 'Tuberculosis', 'Ulcerative Colitis', 'Hypertension', 'VTE', 'Hepatitis C', 'Bladder Cancer', 'GERD', 'Marfan Syndrome', 'Ankylosing Spondylitis', 'Atrial Fibrillation', 'Coronary Artery Disease']
-Which problem(s) from the list does this medication treat?","['Gout', 'Wilson Disease', 'Anxiety', 'Pneumothorax', 'Diverticulitis', 'IBS', ""Behcet's Disease"", 'Tuberculosis', 'Ulcerative Colitis', 'Hypertension', 'VTE', 'Hepatitis C', 'Bladder Cancer', 'GERD', 'Marfan Syndrome', 'Ankylosing Spondylitis', 'Atrial Fibrillation', 'Coronary Artery Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Gout', 'Wilson Disease', 'Anxiety', 'Pneumothorax', 'Diverticulitis', 'IBS', ""Behcet's Disease"", 'Tuberculosis', 'Ulcerative Colitis', 'Hypertension', 'VTE', 'Hepatitis C', 'Bladder Cancer', 'GERD', 'Marfan Syndrome', 'Ankylosing Spondylitis', 'Atrial Fibrillation', 'Coronary Artery Disease']",The medication Metoprolol is used to treat Hypertension and Atrial Fibrillation from the list of patient problems.,"['Hypertension', 'Atrial Fibrillation']"
 53,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Depression', 'Hepatitis C']
-Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis C']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis C']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 56,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']
-Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 56,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']
-Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Depression', 'Hepatitis B', 'Leukemia', 'Bronchiectasis', 'Atrial Fibrillation', 'Osteoporosis', 'Essential Thrombocythemia', 'Myelofibrosis', 'Sarcoidosis', 'Squamous Cell Carcinoma', 'Substance Use Disorder', 'Liver Disease', 'Hepatitis C', 'Melanoma']",The medication Levothyroxine treats hypothyroidism (underactive thyroid). None of the patient problems listed are treated by this medication.,[]
 58,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Gout', 'Pleural Effusion', 'Lymphoma']
-Which problem(s) from the list does this medication treat?","['Gout', 'Pleural Effusion', 'Lymphoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Gout', 'Pleural Effusion', 'Lymphoma']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 58,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Gout', 'Pleural Effusion', 'Lymphoma']
-Which problem(s) from the list does this medication treat?","['Gout', 'Pleural Effusion', 'Lymphoma']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Gout', 'Pleural Effusion', 'Lymphoma']",The medication Levothyroxine treats hypothyroidism (underactive thyroid).,[]
 71,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']
-Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']",The medication Losartan is used to treat Hypertension.,['Hypertension']
 71,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']
-Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']",The medication Metformin treats 'PCOS' from the list.,['PCOS']
 71,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']
-Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Leukemia', 'Squamous Cell Carcinoma', 'Hepatitis C', 'Hyperthyroidism', 'Stroke', 'Basal Cell Carcinoma', 'Goodpasture Syndrome', 'Lymphoma', 'PCOS', ""Cushing's Syndrome"", 'Endometriosis', 'Heart Failure', ""Parkinson's Disease"", 'Ehlers-Danlos Syndrome', 'Ankylosing Spondylitis', 'Tuberculosis', 'Liver Disease', 'Hypertension', 'Nephrolithiasis', 'Takayasu Arteritis']",The medication Metoprolol is used to manage Hypertension (high blood pressure).,['Hypertension']
 77,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']
-Which problem(s) from the list does this medication treat?","['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']","The medication Metoprolol is used to manage hypertension (high blood pressure). However, none of the patient problems listed specifically include hypertension. Therefore, based on the information provided, it cannot be definitively stated which problem(s) from the list this medication treats.",[]
 77,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']
-Which problem(s) from the list does this medication treat?","['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Epilepsy', 'Multiple Sclerosis', 'Prostate Cancer', 'Coronary Artery Disease', 'Sickle Cell Disease', 'Takayasu Arteritis', 'Addison Disease', 'Hepatitis C', 'Gaucher Disease', 'Sleep Apnea', 'Endometriosis', 'Hyperthyroidism', 'Lupus', 'Pheochromocytoma', 'GERD', 'Marfan Syndrome', ""Crohn's Disease"", 'Hepatitis B']",I don't know,[]
 83,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Cholelithiasis', 'Osteoarthritis', 'Pancreatitis', 'Hypothyroidism']
-Which problem(s) from the list does this medication treat?","['Cholelithiasis', 'Osteoarthritis', 'Pancreatitis', 'Hypothyroidism']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cholelithiasis', 'Osteoarthritis', 'Pancreatitis', 'Hypothyroidism']","The medication Metoprolol is used to manage hypertension (high blood pressure). None of the patient problems listed (Cholelithiasis, Osteoarthritis, Pancreatitis, Hypothyroidism) are treated with this medication.","['Cholelithiasis', 'Osteoarthritis', 'Pancreatitis', 'Hypothyroidism']"
 84,Metoprolol,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metoprolol
 Info: Used to manage hypertension (high blood pressure).
 Patient Problems: ['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]
-Which problem(s) from the list does this medication treat?","['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]",The medication Metoprolol is used to treat Hypertension.,['Hypertension']
 84,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]
-Which problem(s) from the list does this medication treat?","['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pheochromocytoma', 'Gout', 'Hemochromatosis', 'Prostate Cancer', 'Basal Cell Carcinoma', 'Thalassemia', 'Endometriosis', 'Epilepsy', 'Hypertension', 'Depression', 'Anxiety', 'Melanoma', 'Pulmonary Fibrosis', ""Crohn's Disease""]",The medication Losartan is prescribed for treating 'Hypertension'.,['Hypertension']
 85,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']
-Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 85,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']
-Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Atrial Fibrillation', 'Substance Use Disorder', 'Obesity', 'Myeloma', 'Anxiety', ""Behcet's Disease"", 'Hypothyroidism', 'Essential Thrombocythemia', 'Coronary Artery Disease', 'Depression', 'Bronchiectasis', 'Dementia']",The medication Levothyroxine treats Hypothyroidism.,['Hypothyroidism']
 86,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Squamous Cell Carcinoma', 'Leukemia', 'Cancer', 'Alport Syndrome', 'Aplastic Anemia', 'Pheochromocytoma', 'Anxiety', 'Thyroid Disease', 'Ankylosing Spondylitis', 'Marfan Syndrome', 'Lymphoma', 'Testicular Cancer', 'Peptic Ulcer', 'Prostate Cancer', 'Pneumothorax']
-Which problem(s) from the list does this medication treat?","['Squamous Cell Carcinoma', 'Leukemia', 'Cancer', 'Alport Syndrome', 'Aplastic Anemia', 'Pheochromocytoma', 'Anxiety', 'Thyroid Disease', 'Ankylosing Spondylitis', 'Marfan Syndrome', 'Lymphoma', 'Testicular Cancer', 'Peptic Ulcer', 'Prostate Cancer', 'Pneumothorax']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Squamous Cell Carcinoma', 'Leukemia', 'Cancer', 'Alport Syndrome', 'Aplastic Anemia', 'Pheochromocytoma', 'Anxiety', 'Thyroid Disease', 'Ankylosing Spondylitis', 'Marfan Syndrome', 'Lymphoma', 'Testicular Cancer', 'Peptic Ulcer', 'Prostate Cancer', 'Pneumothorax']","The medication Furosemide does not directly treat any of the problems listed. However, it can be used to manage symptoms such as fluid overload or edema that may occur as a result of these conditions.",[]
 88,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']
-Which problem(s) from the list does this medication treat?","['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']",The medication Metformin treats Type 2 Diabetes Mellitus. None of the patient problems listed are Type 2 Diabetes Mellitus.,[]
 88,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']
-Which problem(s) from the list does this medication treat?","['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Myelofibrosis', 'Testicular Cancer', 'Sleep Apnea', 'Amyloidosis', 'Pleural Effusion', ""Crohn's Disease"", 'CKD', 'Schizophrenia', 'Gout', 'Basal Cell Carcinoma', 'Depression', 'Cancer', 'Nephrolithiasis', 'Polycythemia Vera', 'Lymphoma', 'Alcohol Use Disorder', 'Sarcoidosis', 'Obesity', 'Ehlers-Danlos Syndrome']",The medication Levothyroxine treats hypothyroidism (underactive thyroid). None of the problems listed for the patient are treated by this medication according to the provided information.,[]
 89,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Goodpasture Syndrome', 'Peripheral Artery Disease', 'Diverticulitis', 'Takayasu Arteritis', 'Ankylosing Spondylitis', 'Gout', 'Nephrolithiasis', 'Schizophrenia', 'Fabry Disease', 'IBS', 'Myeloma', 'Ovarian Cancer', 'Sickle Cell Disease', 'Coronary Artery Disease', 'Endometriosis']
-Which problem(s) from the list does this medication treat?","['Goodpasture Syndrome', 'Peripheral Artery Disease', 'Diverticulitis', 'Takayasu Arteritis', 'Ankylosing Spondylitis', 'Gout', 'Nephrolithiasis', 'Schizophrenia', 'Fabry Disease', 'IBS', 'Myeloma', 'Ovarian Cancer', 'Sickle Cell Disease', 'Coronary Artery Disease', 'Endometriosis']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Goodpasture Syndrome', 'Peripheral Artery Disease', 'Diverticulitis', 'Takayasu Arteritis', 'Ankylosing Spondylitis', 'Gout', 'Nephrolithiasis', 'Schizophrenia', 'Fabry Disease', 'IBS', 'Myeloma', 'Ovarian Cancer', 'Sickle Cell Disease', 'Coronary Artery Disease', 'Endometriosis']",The medication Metformin treats Type 2 Diabetes Mellitus.,[]
 90,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Ankylosing Spondylitis', 'Schizophrenia']
-Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Schizophrenia']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Ankylosing Spondylitis', 'Schizophrenia']",The medication Levothyroxine treats hypothyroidism (underactive thyroid). It does not treat Ankylosing Spondylitis or Schizophrenia.,"['Ankylosing Spondylitis', 'Schizophrenia']"
 91,Losartan,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Losartan
 Info: Prescribed for hypertension (high blood pressure).
 Patient Problems: ['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']
-Which problem(s) from the list does this medication treat?","['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']",The medication Losartan is prescribed for hypertension (high blood pressure). None of the patient problems listed are directly treated by this medication.,[]
 91,Metformin,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Metformin
 Info: Treats Type 2 Diabetes Mellitus.
 Patient Problems: ['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']
-Which problem(s) from the list does this medication treat?","['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Pleural Effusion', ""Cushing's Syndrome"", ""Behcet's Disease"", 'Schizophrenia', 'Marfan Syndrome', 'Pancreatitis', 'Diverticulitis', 'UTI', 'IBS', 'Ulcerative Colitis', 'Thalassemia', 'Appendicitis', 'Squamous Cell Carcinoma', 'Wilson Disease', 'Testicular Cancer', 'Asthma', 'Hyperlipidemia', 'Hemophilia', 'Peptic Ulcer', 'Addison Disease']",I don't know,[]
 94,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']
-Which problem(s) from the list does this medication treat?","['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']",The medication Levothyroxine treats hypothyroidism (underactive thyroid).,[]
 94,Furosemide,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Furosemide
 Info: Used to treat fluid overload or edema, such as in heart failure.
 Patient Problems: ['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']
-Which problem(s) from the list does this medication treat?","['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']","The medication Furosemide is used to treat fluid overload or edema, such as in heart failure. None of the patient problems listed (Hemophilia, HIV, COPD, Hemochromatosis, Wegener's Granulomatosis, Depression) are directly treated by this medication.","['Hemophilia', 'HIV', 'COPD', 'Hemochromatosis', ""Wegener's Granulomatosis"", 'Depression']"
 96,Levothyroxine,"You are a clinical decision support assistant.
 Answer “I don’t know” if the question asked is not recorded in the mini-knowledge base.
 
 Medication: Levothyroxine
 Info: Treats hypothyroidism (underactive thyroid).
 Patient Problems: ['Cholecystitis', 'Asthma', 'Adrenal Insufficiency', 'None', 'Ulcerative Colitis', 'CKD', 'Pheochromocytoma', 'Diverticulitis', 'Diabetes', 'Prostate Cancer', 'Osteoarthritis', 'Peripheral Artery Disease']
-Which problem(s) from the list does this medication treat?","['Cholecystitis', 'Asthma', 'Adrenal Insufficiency', 'None', 'Ulcerative Colitis', 'CKD', 'Pheochromocytoma', 'Diverticulitis', 'Diabetes', 'Prostate Cancer', 'Osteoarthritis', 'Peripheral Artery Disease']","Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: OPENAI_A**_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",[]
+Which problem(s) from the list does this medication treat?","['Cholecystitis', 'Asthma', 'Adrenal Insufficiency', 'None', 'Ulcerative Colitis', 'CKD', 'Pheochromocytoma', 'Diverticulitis', 'Diabetes', 'Prostate Cancer', 'Osteoarthritis', 'Peripheral Artery Disease']",The medication Levothyroxine treats hypothyroidism (underactive thyroid). None of the problems listed for the patient are treated by this medication.,['None']
