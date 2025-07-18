@@ -4,7 +4,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# Load environment variables (including OPENAI_API_KEY)
+# Load environment variabless
 load_dotenv()
 
 # Initialize OpenAI client
