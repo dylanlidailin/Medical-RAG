@@ -56,6 +56,14 @@ def build_prompt(med: str, info: str, problems: list) -> str:
 print("Prompt construction function ready.")
 
 # --- Step 6: 调用 OpenAI API ---
+from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
+import openai
+
+@retry(
+    wait=wait_exponential(multiplier=2, min=1, max=30),
+    stop=stop_after_attempt(5),
+    retry=retry_if_exception_type(openai.RateLimitError)
+)
 def query_openai(prompt: str, model="gpt-4", temperature=0.0) -> str:
     try:
         response = client.chat.completions.create(
@@ -69,6 +77,7 @@ def query_openai(prompt: str, model="gpt-4", temperature=0.0) -> str:
         return response.choices[0].message.content.strip()
     except Exception as e:
         return f"Error: {str(e)}"
+
 
 print("OpenAI API query function ready.")
 
@@ -105,21 +114,36 @@ def process_patient(row, kb_dict) -> dict:
 print("Patient processing function ready.")
 
 # --- Step 9: 主入口 ---
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 def main():
     kb = load_knowledge_base("rxnorm_enriched_chunks.csv")
     df = pd.read_csv("chest_pain_patients.csv")
     df["Patient_ID"] = df.index  # 添加唯一标识
 
+    # 准备所有患者输入
+    patient_inputs = [row for _, row in df.iterrows()]
+
     summary_results = []
 
-    for _, row in df.iterrows():
-        result = process_patient(row, kb)
-        summary_results.append(result)
+    def run_one(row):
+        return process_patient(row, kb)
+
+    # 多线程并发执行（5线程可调）
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        future_to_row = {executor.submit(run_one, row): row for row in patient_inputs}
+        for future in as_completed(future_to_row):
+            try:
+                result = future.result()
+                summary_results.append(result)
+            except Exception as e:
+                print("❌ 出错:", e)
 
     final_df = pd.DataFrame(summary_results)
     final_df.to_csv("medication_problem_mapping_summary.csv", index=False)
-    print("✅ 输出已完成：medication_problem_mapping_summary.csv")
+    print("✅ Done: medication_problem_mapping_summary.csv")
 
 
 if __name__ == "__main__":
     main()
+
