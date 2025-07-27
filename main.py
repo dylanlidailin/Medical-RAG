@@ -13,6 +13,17 @@ client = OpenAI(api_key=api_key)
 
 print("OpenAI API Key loaded successfully.")
 
+# Run a simple query using OpenAI client to verify connection
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "How to cure cancer?"}
+    ],
+    temperature=0.0
+)
+print("Connection to OpenAI API successful. Response:", response.choices[0].message.content)
+
 # --- Step 1: 加载知识库为字典 ---
 def load_knowledge_base(filepath="rxnorm_enriched_chunks.csv") -> dict:
     df = pd.read_csv(filepath)
