@@ -1,2 +1,4 @@
 # Medical-RAG
 This project implements a Retrieval-Augmented Generation (RAG) pipeline for medication-problem mapping using RxNorm as the external structured knowledge base. Leveraging a FAISS vector store, the model indexes enriched drug data with metadata (e.g., drug name, RxCUI, term type) and enables semantically meaningful retrieval through sentence-transformer embeddings. When a clinical question is posed (e.g., "What does losartan treat?"), the retriever locates the most relevant drug descriptions from the RxNorm knowledge base, which are then passed to a GPT-4 model for answer generation. This hybrid method enhances factual accuracy and recall in clinical decision support tasks.
+
+(![pipeline](Pipeline.png))
