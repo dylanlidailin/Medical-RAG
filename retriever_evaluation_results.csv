@@ -1,0 +1,7 @@
+Query,Expected Drugs,Top-1 Preview,Hit@5
+hypertension,"Losartan, Enalapril, Hydrochlorothiazide",Adrenalin 2 MG per 250 ML Injection (SY) - . ...,❌
+type 2 diabetes,"Metformin, Glipizide, Semaglutide",influenza A virus (H1N1) antigen / influenza A virus (H3N2) antigen / influenza B virus antigen Inje...,❌
+hypothyroidism,Levothyroxine,EPINEPHrine 0.04 MG/ML [Adrenalin] (TMSY) - . ...,❌
+depression,"Sertraline, Fluoxetine",sebetralstat (IN) - . ...,❌
+osteoporosis,Alendronate,sebetralstat Pill (SCDG) - . ...,❌
+neuropathic pain,Gabapentin,ARNICA MONTANA 7 g in 100 g TOPICAL CREAM [NATUHEAL JOINT BACK PAIN RELIEF] (DP) - . ...,❌

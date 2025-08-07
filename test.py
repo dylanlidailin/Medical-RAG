@@ -106,7 +106,7 @@ def main():
 
     final_df = pd.DataFrame(summary_results)
     final_df.to_csv("medication_problem_mapping_summary.csv", index=False)
-    print("✅ Output saved: medication_problem_mapping_summary.csv")
+    print("Output saved: medication_problem_mapping_summary.csv")
 
 if __name__ == "__main__":
     main()
