@@ -3,6 +3,7 @@ import time
 import pandas as pd
 from dotenv import load_dotenv
 from openai import OpenAI
+from tqdm import tqdm
 
 # --- Step 0: Setup ---
 load_dotenv()
@@ -116,6 +117,7 @@ def process_patient(row, kb_dict) -> dict:
 print("Patient processing function ready.")
 
 # --- Step 9: 主入口 ---
+
 def main():
     kb = load_knowledge_base("rxnorm_enriched_chunks.csv")
     df = pd.read_csv("chest_pain_patients.csv")
@@ -123,14 +125,12 @@ def main():
 
     summary_results = []
 
-    for _, row in df.iterrows():
+    for _, row in tqdm(df.head(5).iterrows(), total=5, desc="Processing patients"):
         result = process_patient(row, kb)
         summary_results.append(result)
 
     final_df = pd.DataFrame(summary_results)
-    final_df.to_csv("medication_problem_mapping_summary.csv", index=False)
-    print("✅ 输出已完成：medication_problem_mapping_summary.csv")
-
+    final_df.to_csv("Mapping/medication_problem_main_mapping_summary.csv", index=False)
 
 if __name__ == "__main__":
     main()
