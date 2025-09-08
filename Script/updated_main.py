@@ -62,3 +62,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#Processing patients: 100it [48:47, 29.28s/it]
