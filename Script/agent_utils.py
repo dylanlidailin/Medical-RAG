@@ -8,11 +8,12 @@ from fuzzywuzzy import fuzz
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 
 # --- Load Embeddings Model and OpenAI Client ---
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer("microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext")
 openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # --- Build FAISS Index ---
@@ -30,37 +31,45 @@ def retrieve_top_k(med_name: str, index, terms, embeddings, k=1) -> str:
     return terms[I[0][0]] if I[0][0] < len(terms) else ""
 
 # --- Prompt Construction ---
-def build_agent_prompt(med: str, info: str, problems: list, examples: list = []) -> str:
-    few_shot = "\n\n".join(examples)
+# In agent_utils.py
+
+def build_agent_prompt(med: str, info: str, problems: list) -> str:
+    # Convert the list of problems into a formatted string for the prompt
+    problem_list_str = ", ".join(f'"{p}"' for p in problems)
+
     return (
-        "You are a clinical decision support assistant.\n"
-        "Use the medication description and patient problem list to match treatments.\n"
-        f"Examples:\n{few_shot}\n"
-        "---\n"
+        "You are a clinical decision support assistant. Your task is to identify which of the patient's medical "
+        f"problems from the provided list are likely treated by the given medication. The list is: [{problem_list_str}]."
+        "\n\n"
         f"Medication: {med}\n"
-        f"Description: {info}\n"
-        f"Patient Problems: {problems}\n"
-        "Which problem(s) does this medication treat from the list above?"
+        f"Description: {info}\n\n"
+        "Based on the description, analyze the patient's problems and return a JSON object with a single key, "
+        "'treated_problems', which contains a list of strings of the matching problems from the list. "
+        "If none of the problems are treated by the medication, return an empty list."
+        "\n\n"
+        "Example Response for a match: {\"treated_problems\": [\"Hypertension\", \"Angina\"]}"
+        "Example Response for no match: {\"treated_problems\": []}"
     )
 
 # --- Call OpenAI with Retry Strategy ---
-def query_with_retry(prompt: str, model="gpt-4") -> str:
-    temps = [0.0, 0.3, 0.7]
-    for temp in temps:
-        try:
-            response = openai_client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "system", "content": "You are a clinical decision support assistant."},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=temp
-            )
-            return response.choices[0].message.content.strip()
-        except Exception as e:
-            print(f"Retrying due to error: {e}")
-            time.sleep(1)
-    return "Error: All retries failed"
+def query_with_retry(prompt: str, model="gpt-4-1106-preview") -> list:
+    # Use a model that is optimized for JSON output, like the GPT-4 Turbo preview
+    try:
+        response = openai_client.chat.completions.create(
+            model=model,
+            response_format={"type": "json_object"}, # Enable JSON mode
+            messages=[
+                {"role": "system", "content": "You are a clinical decision support assistant that outputs JSON."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.0 # Low temperature for deterministic, structured output
+        )
+        # Parse the JSON string from the response
+        output = json.loads(response.choices[0].message.content)
+        return output.get("treated_problems", []) # Safely get the list
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return [] # Return an empty list on failure
 
 # --- Match Output to Problems ---
 def fuzzy_match_problems(response: str, problems: list, threshold=80) -> list:

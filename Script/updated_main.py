@@ -19,14 +19,15 @@ def load_knowledge_base(path="rxnorm_enriched_chunks.csv"):
     df = pd.read_csv(path)
     return df["STR"].tolist(), dict(zip(df["STR"].str.strip().str.capitalize(), df["Text_Chunk"]))
 
-def load_patients(path="chest_pain_patients.csv"):
+def load_patients(path="improved_chest_pain_patients.csv"):
     df = pd.read_csv(path)
     df["Patient_ID"] = df.index
     return df
 
 # --- Step 2: Extract Info ---
+# A more robust way to extract medication names
 def extract_medications(med_str):
-    return [m.strip().split()[0].capitalize() for m in str(med_str).split(",") if m.strip()]
+    return [m.strip().capitalize() for m in str(med_str).split(",") if m.strip()]
 
 def extract_problems(problem_str):
     return [p.strip() for p in str(problem_str).split(",") if p.strip()]
@@ -62,5 +63,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-#Processing patients: 100it [48:47, 29.28s/it]
