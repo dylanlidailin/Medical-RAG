@@ -40,37 +40,40 @@ def process_patient(row):
 
         prompt = build_agent_prompt(standardized_med_name, indication, problems)
         
-        # The agent returns a dictionary with its findings
         agent_response = query_with_retry(prompt)
         
-        # Extract the list of problems the agent found in the patient's list
-        response_problems = agent_response.get("treated_problems_from_list", [])
-
-        # Fuzzy match to confirm the agent's findings are valid
-        matched_problems = fuzzy_match_problems(response_problems, problems)
+        # Extract the detailed lists from the agent's response
+        direct_treatments = agent_response.get("direct_treatment", [])
+        related_conditions = agent_response.get("related_conditions", [])
         
-        # --- NEW LOGIC ---
-        if matched_problems:
-            # If we found a valid match in the patient's existing list, use it.
-            result["Treated_Problems_by_Medication"][med] = matched_problems
-        else:
-            # If no match was found, the patient's record is likely incomplete.
-            # We will trust the agent's identified primary indication.
+        # Fuzzy match to ensure the agent's findings are valid and from the list
+        matched_direct = fuzzy_match_problems(direct_treatments, problems)
+        matched_related = fuzzy_match_problems(related_conditions, problems)
+
+        # --- CORRECTED LOGIC TO BUILD THE FINAL MAPPING ---
+        final_mapping = []
+        if matched_direct:
+            # CORRECTED: The list comprehension is now inside the extend() method
+            final_mapping.extend([f"{p} (Direct)" for p in matched_direct])
+        
+        if matched_related:
+            # CORRECTED: The list comprehension is now inside the extend() method
+            final_mapping.extend([f"{p} (Related)" for p in matched_related])
+
+        # If after all that, no links were found, fall back to the primary indication
+        if not final_mapping:
             primary_indication = agent_response.get('primary_indication', 'Unknown')
-            
-            # Add the agent's finding as the treated problem, unless it's an error.
             if primary_indication not in ['Unknown', 'Error', 'None']:
-                result["Treated_Problems_by_Medication"][med] = [primary_indication]
-            else:
-                # If the agent couldn't determine an indication, leave it empty.
-                result["Treated_Problems_by_Medication"][med] = []
+                final_mapping.append(f"{primary_indication} (Inferred)")
+        
+        result["Treated_Problems_by_Medication"][med] = final_mapping if final_mapping else []
 
     return result
 
 # --- Step 4: Main Execution ---
 def main():
     df = load_patients()
-    df = df.head(10)  # Process the first 10 patients
+    df = df.head(4)  # Process the first 10 patients
 
     results = []
     for _, row in tqdm(df.iterrows(), total=df.shape[0], desc="Processing patients"):

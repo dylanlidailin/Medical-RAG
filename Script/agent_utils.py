@@ -62,14 +62,15 @@ def build_agent_prompt(med_name: str, med_indication: str, problems: list) -> st
     problem_list_str = ", ".join(f'"{p}"' for p in problems)
     
     return (
-        "You are a clinical decision support assistant. Your task is to analyze a medication and a patient's problem list.\n\n"
+        "You are an expert clinical decision support assistant. Your task is to analyze a medication and a patient's problem list to find both direct and indirect clinical associations.\n\n"
         f"Medication: {med_name}\n"
-        f"Known Indication: {med_indication}\n"
+        f"Known Primary Indication: {med_indication}\n"
         f"Patient's Problem List: [{problem_list_str}]\n\n"
-        "Return a JSON object with two keys:\n"
-        "1. 'primary_indication': A string stating the main condition this medication treats (e.g., 'Hypertension').\n"
-        "2. 'treated_problems_from_list': A list of strings of the matching problems from the patient's list. If there are no matches, return an empty list.\n\n"
-        'Example Response: {"primary_indication": "Hypertension", "treated_problems_from_list": ["Hypertension"]}'
+        "Return a JSON object with three keys:\n"
+        "1. 'primary_indication': A string confirming the main condition this medication treats (e.g., 'Hypertension').\n"
+        "2. 'direct_treatment': A list of problems from the patient's list that this medication is known to treat, including common off-label uses.\n"
+        "3. 'related_conditions': A list of problems from the patient's list that are NOT treated by the medication, but are common comorbidities or clinically associated with the primary indication.\n\n"
+        'Example Response: {"primary_indication": "Hypertension", "direct_treatment": ["Anxiety"], "related_conditions": ["Chronic Kidney Disease"]}'
     )
 
 # --- Call OpenAI with Retry Strategy ---
