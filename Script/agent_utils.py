@@ -62,15 +62,24 @@ def build_agent_prompt(med_name: str, med_indication: str, problems: list) -> st
     problem_list_str = ", ".join(f'"{p}"' for p in problems)
     
     return (
-        "You are an expert clinical decision support assistant. Your task is to analyze a medication and a patient's problem list to find both direct and indirect clinical associations.\n\n"
+        "You are an expert clinical decision support assistant. You MUST follow all instructions exactly and only output a single JSON object.\n\n"
         f"Medication: {med_name}\n"
         f"Known Primary Indication: {med_indication}\n"
         f"Patient's Problem List: [{problem_list_str}]\n\n"
-        "Return a JSON object with three keys:\n"
+        "Your task is to populate three keys:\n"
         "1. 'primary_indication': A string confirming the main condition this medication treats (e.g., 'Hypertension').\n"
-        "2. 'direct_treatment': A list of problems from the patient's list that this medication is known to treat, including common off-label uses.\n"
-        "3. 'related_conditions': A list of problems from the patient's list that are NOT treated by the medication, but are common comorbidities or clinically associated with the primary indication.\n\n"
-        'Example Response: {"primary_indication": "Hypertension", "direct_treatment": ["Anxiety"], "related_conditions": ["Chronic Kidney Disease"]}'
+        "2. 'direct_treatment': A list of problems *from the patient's list* that this medication is known to treat.\n"
+        "3. 'related_conditions': A list of problems *from the patient's list* that are common comorbidities with the 'primary_indication', but are NOT treated by the medication.\n\n"
+        
+        # --- THIS IS THE STRONGER FIX ---
+        "**CRITICAL RULES (READ CAREFULLY):**\n"
+        "1. If no problem in the patient's list is a **clear, established direct treatment** for the medication, 'direct_treatment' **MUST** be an empty list `[]`.\n"
+        "2. If no problem in the patient's list is a **common, known comorbidity** of the 'primary_indication', 'related_conditions' **MUST** be an empty list `[]`.\n"
+        "3. **DO NOT GUESS OR INVENT LINKS.** If you are not 100% certain of a clinical association, you **MUST** return an empty list for that key. It is **critical** that you do not provide false information.\n"
+        # --- END OF FIX ---
+
+        'Example (Good Match): {"primary_indication": "Hypertension", "direct_treatment": ["Anxiety"], "related_conditions": ["Chronic Kidney Disease"]}\n'
+        'Example (No Match / Required): {"primary_indication": "Hypertension", "direct_treatment": [], "related_conditions": []}'
     )
 
 # --- Call OpenAI with Retry Strategy ---
