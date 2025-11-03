@@ -18,10 +18,10 @@
             </style>
         </head>
         <body>
-            <h1>🔍 Automated RAG Validation Report</h1>
+            <h1>Automated RAG Validation Report</h1>
             <p><em>Generated using known medication-condition mappings database</em></p>
             
-            <h2>📊 Overall Statistics</h2>
+            <h2></h2>Overall Statistics</h2>
             
             <div class="metric">
                 <strong>Total Medications Analyzed:</strong> 0
@@ -52,7 +52,7 @@
                 (0 medications had prediction errors)
             </div>
             
-            <h2>🔍 Error Analysis</h2>
+            <h2>Error Analysis</h2>
             
             <h3>Most Common Incorrect Predictions (False Positives)</h3>
             <ul>
@@ -69,7 +69,7 @@
         
             </ul>
             
-            <h2>📋 Detailed Validation Results</h2>
+            <h2>Detailed Validation Results</h2>
             <p><em>Showing validatable medications only. Red rows indicate errors.</em></p>
             
             <table>
@@ -78,9 +78,9 @@
                     <th>Medication</th>
                     <th>Expected Conditions</th>
                     <th>Predicted Conditions</th>
-                    <th>✅ Correct</th>
-                    <th>❌ Incorrect</th>
-                    <th>😞 Missed</th>
+                    <th>Correct</th>
+                    <th>Incorrect</th>
+                    <th>Missed</th>
                     <th class="center">Status</th>
                 </tr>
         
@@ -88,7 +88,7 @@
             
             <p><em>Showing first 100 validatable results out of 0 total.</em></p>
             
-            <h2>📝 Methodology Notes</h2>
+            <h2>Methodology Notes</h2>
             <ul>
                 <li><strong>Known Mappings Database:</strong> 50 medications with 182 total condition associations</li>
                 <li><strong>Validation Coverage:</strong> Only medications in our reference database can be validated</li>
@@ -97,8 +97,8 @@
                 <li><strong>Recall:</strong> Correct predictions / (Correct predictions + Missed opportunities)</li>
             </ul>
             
-            <h2>💡 Recommendations</h2>
-        <li>🔍 <strong>Low validation coverage:</strong> Consider expanding the known mappings database to include more medications from your dataset</li><li>⚠️ <strong>Low accuracy:</strong> Review RAG system prompts and knowledge base quality</li><li>🎯 <strong>Low precision:</strong> System is making too many incorrect predictions - consider more restrictive matching</li><li>📈 <strong>Low recall:</strong> System is missing valid medication-condition matches - consider more permissive matching</li>
+            <h2>Recommendations</h2>
+        <li><strong>Low validation coverage:</strong> Consider expanding the known mappings database to include more medications from your dataset</li><li>⚠️ <strong>Low accuracy:</strong> Review RAG system prompts and knowledge base quality</li><li>🎯 <strong>Low precision:</strong> System is making too many incorrect predictions - consider more restrictive matching</li><li>📈 <strong>Low recall:</strong> System is missing valid medication-condition matches - consider more permissive matching</li>
             </ul>
             
             <p><em>Report generated automatically using known medication-condition mappings. 

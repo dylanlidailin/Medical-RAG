@@ -13,7 +13,7 @@ from agent_utils import (
 load_dotenv()
 
 # --- Step 1: Load Data ---
-def load_patients(path="chest_pain_patients.csv"):
+def load_patients(path="chest_pain_patients_real.csv"):
     # Using 'engine=python' for robust CSV parsing
     df = pd.read_csv(path, engine='python')
     df["Patient_ID"] = df.index
@@ -73,7 +73,7 @@ def process_patient(row):
 # --- Step 4: Main Execution ---
 def main():
     df = load_patients()
-    df = df.head(4)  # Process the first 10 patients
+    df = df.head(5)  # Process the first 10 patients
 
     results = []
     for _, row in tqdm(df.iterrows(), total=df.shape[0], desc="Processing patients"):
@@ -81,8 +81,7 @@ def main():
 
     # Ensure the output directory exists
     os.makedirs("Mapping", exist_ok=True)
-    pd.DataFrame(results).to_csv("Mapping/medication_problem_agent_mapping_summary.csv", index=False)
-    print("\nProcessing complete. Output saved to Mapping/medication_problem_agent_mapping_summary.csv")
+    pd.DataFrame(results).to_csv("Mapping/Real_Chest_Pain_Testing.csv", index=False)
 
 if __name__ == "__main__":
     main()
