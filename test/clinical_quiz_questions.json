@@ -1,0 +1,265 @@
+{
+  "quizTitle": "Clinical Agent Accuracy Test",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "Which medication is a first-line treatment for Hypertension (High Blood Pressure)?",
+      "answerOptions": [
+        {
+          "text": "Lisinopril",
+          "rationale": "Lisinopril is an ACE inhibitor, a very common first-line treatment for hypertension.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sertraline",
+          "rationale": "Sertraline is an SSRI, used to treat depression and anxiety.",
+          "isCorrect": false
+        },
+        {
+          "text": "Metformin",
+          "rationale": "Metformin is a first-line treatment for Type 2 Diabetes.",
+          "isCorrect": false
+        },
+        {
+          "text": "Atorvastatin",
+          "rationale": "Atorvastatin is a statin, used to lower cholesterol.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 2,
+      "question": "A patient is diagnosed with 'Hyperlipidemia'. Which medication would you expect to see prescribed?",
+      "answerOptions": [
+        {
+          "text": "Atorvastatin",
+          "rationale": "Atorvastatin (a statin) is a primary treatment for hyperlipidemia (high cholesterol).",
+          "isCorrect": true
+        },
+        {
+          "text": "Amlodipine",
+          "rationale": "Amlodipine is a calcium channel blocker used for high blood pressure.",
+          "isCorrect": false
+        },
+        {
+          "text": "Omeprazole",
+          "rationale": "Omeprazole is a proton pump inhibitor used for acid reflux (GERD).",
+          "isCorrect": false
+        },
+        {
+          "text": "Albuterol",
+          "rationale": "Albuterol is a bronchodilator used for asthma.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 3,
+      "question": "Which of the following conditions is a well-known *comorbidity* of Type 2 Diabetes (i.e., a 'related_condition')?",
+      "answerOptions": [
+        {
+          "text": "Chronic Kidney Disease (CKD)",
+          "rationale": "Diabetes is a leading cause of Chronic Kidney Disease. This is a classic comorbidity.",
+          "isCorrect": true
+        },
+        {
+          "text": "Gout",
+          "rationale": "While they can co-occur, CKD and Hypertension are much stronger and more direct comorbidities.",
+          "isCorrect": false
+        },
+        {
+          "text": "Migraine",
+          "rationale": "There is not a strong, direct link between diabetes and migraines.",
+          "isCorrect": false
+        },
+        {
+          "text": "Acid Reflux",
+          "rationale": "This is generally considered an unrelated condition.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 4,
+      "question": "Sertraline (Zoloft) is an SSRI medication. What is its *primary indication*?",
+      "answerOptions": [
+        {
+          "text": "Depression",
+          "rationale": "Sertraline is a selective serotonin reuptake inhibitor (SSRI) primarily used to treat depression, anxiety, and other mood disorders.",
+          "isCorrect": true
+        },
+        {
+          "text": "Diabetes",
+          "rationale": "Sertraline does not treat diabetes.",
+          "isCorrect": false
+        },
+        {
+          "text": "Heart Failure",
+          "rationale": "Sertraline is not a treatment for heart failure.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pain",
+          "rationale": "While some antidepressants are used for neuropathic pain, it is not the primary indication for Sertraline.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 5,
+      "question": "A patient is on **'Lisinopril'** and their problem list is `[\"Hypertension\", \"Gout\"]`. What should the *final* pipeline output for 'Lisinopril' be?",
+      "answerOptions": [
+        {
+          "text": "[\"Hypertension (Direct)\"]",
+          "rationale": "The model should identify 'Hypertension' as a 'direct_treatment' and 'Gout' as unrelated. The output should be the 'Direct' tag.",
+          "isCorrect": true
+        },
+        {
+          "text": "[\"Hypertension (Inferred)\"]",
+          "rationale": "This is incorrect. The 'Inferred' tag is only used as a fallback if NO direct or related matches are found.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Hypertension (Direct)\", \"Gout (Related)\"]",
+          "rationale": "This is incorrect. Gout is not a standard comorbidity of hypertension (though it can be a *side effect* of diuretics, not Lisinopril). The model should not link them.",
+          "isCorrect": false
+        },
+        {
+          "text": "[]",
+          "rationale": "This is incorrect. A clear, direct match exists on the patient's problem list.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "A patient is on **'Atorvastatin'** (for cholesterol) and their problem list is `[\"Anxiety\", \"Asthma\"]`. What should the *final* pipeline output for 'Atorvastatin' be?",
+      "answerOptions": [
+        {
+          "text": "[\"Hyperlipidemia (Inferred)\"]",
+          "rationale": "The model should find no 'direct_treatment' or 'related_conditions' on the list. It should fall back to the primary indication ('Hyperlipidemia' or 'High Cholesterol') and your code will tag it as '(Inferred)'.",
+          "isCorrect": true
+        },
+        {
+          "text": "[]",
+          "rationale": "This is incorrect. Your code includes a fallback mechanism to add the primary indication as '(Inferred)' if no other links are found.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Anxiety (Related)\"]",
+          "rationale": "This is incorrect. Anxiety is not a known comorbidity of high cholesterol, and the model should be instructed not to 'guess' links.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Asthma (Direct)\"]",
+          "rationale": "This is incorrect. Atorvastatin does not treat asthma.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 7,
+      "question": "A patient is on **'Metformin'** and their problem list is `[\"Chronic Kidney Disease\", \"Hypertension\"]`. Metformin's primary indication is 'Diabetes'. What should the *final* pipeline output for 'Metformin' be?",
+      "answerOptions": [
+        {
+          "text": "[\"Chronic Kidney Disease (Related)\", \"Hypertension (Related)\"]",
+          "rationale": "This is correct. The model should know 'Diabetes' (the primary indication) is not on the list. However, it *should* know that both CKD and Hypertension are major comorbidities of Diabetes. Therefore, it should list both as 'related_conditions'.",
+          "isCorrect": true
+        },
+        {
+          "text": "[\"Diabetes (Inferred)\"]",
+          "rationale": "This is incorrect. The fallback logic is *only* used if no 'direct_treatment' or 'related_conditions' are found. Since related conditions *were* found, the fallback is not used.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Chronic Kidney Disease (Direct)\"]",
+          "rationale": "This is incorrect. Metformin does not directly treat CKD (and in fact, is often contraindicated in severe CKD).",
+          "isCorrect": false
+        },
+        {
+          "text": "[]",
+          "rationale": "This is incorrect. The model should find the link between the medication's primary indication (Diabetes) and the problems on the list (CKD, Hypertension).",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 8,
+      "question": "A patient is on **'Sertraline'** and their problem list is `[\"Depression\"]`. The LLM agent responds with `{\"primary_indication\": \"Depression\", \"direct_treatment\": [\"Depression\"], \"related_conditions\": [\"Anxiety\"]}`. What will the *final pipeline output* be?",
+      "answerOptions": [
+        {
+          "text": "[\"Depression (Direct)\"]",
+          "rationale": "This is correct. The 'direct_treatment' (\"Depression\") is matched. The 'related_conditions' (\"Anxiety\") is *filtered out* by your `fuzzy_match_problems` function because 'Anxiety' is not on the patient's problem list.",
+          "isCorrect": true
+        },
+        {
+          "text": "[\"Depression (Direct)\", \"Anxiety (Related)\"]",
+          "rationale": "This is incorrect. Your `fuzzy_match_problems` function acts as a guard, ensuring that 'Anxiety' is removed because it's not in the original patient list `[\"Depression\"]`.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Depression (Inferred)\"]",
+          "rationale": "This is incorrect. A direct match was found, so the 'InGferred' fallback logic is not used.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Anxiety (Related)\"]",
+          "rationale": "This is incorrect. 'Depression' was the direct match, and 'Anxiety' should have been filtered out.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 9,
+      "question": "A patient is on **'Metformin'** and their problem list is `[\"High Blood Pressure\", \"Diabetes II\"]`. The LLM agent responds with `{\"primary_indication\": \"Diabetes\", \"direct_treatment\": [\"Type 2 Diabetes\"], \"related_conditions\": [\"Hypertension\"]}`. What will the *final pipeline output* be?",
+      "answerOptions": [
+        {
+          "text": "[\"Diabetes II (Direct)\", \"High Blood Pressure (Related)\"]",
+          "rationale": "This is correct. Your `fuzzy_match_problems` function will correctly link 'Type 2 Diabetes' (from LLM) to 'Diabetes II' (from list) and 'Hypertension' (from LLM) to 'High Blood Pressure' (from list).",
+          "isCorrect": true
+        },
+        {
+          "text": "[\"Diabetes II (Direct)\"]",
+          "rationale": "This is incomplete. The fuzzy matcher should also have linked 'Hypertension' to 'High Blood Pressure' as a related condition.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Type 2 Diabetes (Direct)\", \"Hypertension (Related)\"]",
+          "rationale": "This is incorrect. The `fuzzy_match_problems` function returns the item from the *patient's list*, not the LLM's response (i.e., it returns 'Diabetes II', not 'Type 2 Diabetes').",
+          "isCorrect": false
+        },
+        {
+          "text": "[]",
+          "rationale": "This is incorrect. The fuzzy matching logic is designed to catch these near-matches.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 10,
+      "question": "A patient is on **'FakeDrug123'** and their problem list is `[\"Hypertension\"]`. The `get_fhir_medication` call fails and your LLM agent (correctly following its rules) returns `{\"primary_indication\": \"Error\", \"direct_treatment\": [], \"related_conditions\": []}`. What will the *final pipeline output* be?",
+      "answerOptions": [
+        {
+          "text": "[]",
+          "rationale": "This is correct. The `final_mapping` list is empty, so the code checks the fallback. The `primary_indication` is 'Error', which *is* in the exclusion list `['Unknown', 'Error', 'None']`, so the fallback is skipped and the final list remains empty.",
+          "isCorrect": true
+        },
+        {
+          "text": "[\"Error (Inferred)\"]",
+          "rationale": "This is incorrect. Your `if primary_indication not in [...]` logic specifically prevents 'Error' from being added to the final list.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"Hypertension (Related)\"]",
+          "rationale": "This is incorrect. The LLM found no link, so the pipeline cannot create one.",
+          "isCorrect": false
+        },
+        {
+          "text": "[\"No standard information found for FakeDrug1G23 (Inferred)\"]",
+          "rationale": "This is incorrect. While this was the `indication` from FHIR, the `primary_indication` from the LLM was 'Error', which your code filters out.",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

@@ -73,7 +73,7 @@ def process_patient(row):
 # --- Step 4: Main Execution ---
 def main():
     df = load_patients()
-    df = df.head(10)
+    df = df.head(5) # For testing, limit to first 5 patients
 
     results = []
     for _, row in tqdm(df.iterrows(), total=df.shape[0], desc="Processing patients"):
