@@ -76,7 +76,7 @@ def build_agent_prompt(med_name: str, med_indication: str, problems: list) -> st
 
 # --- Call Gemini with Retry Strategy ---
 # --- THIS FUNCTION IS MODIFIED ---
-def query_with_retry(prompt: str, model="gemini-2.5-flash-lite-preview-06-17") -> dict: # <-- CHANGED to gemini-pro
+def query_with_retry(prompt: str, model="gemini-2.5-flash-lite-preview-06-17") -> dict:
     """
     Queries the Gemini API and returns the structured dictionary.
     """
