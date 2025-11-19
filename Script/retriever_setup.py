@@ -80,6 +80,6 @@ def retrieve_context(query: str, top_k: int = 2) -> List[str]:
 load_and_index_documents()
 
 # Example test (optional, for debugging):
-# print("\n--- Retrieval Test ---")
-# context = retrieve_context("What is the primary use of Metformin?")
-# print(f"Retrieved Context:\n{context}")
+#print("\n--- Retrieval Test ---")
+#context = retrieve_context("What is the primary use of Metformin?")
+#print(f"Retrieved Context:\n{context}")

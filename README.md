@@ -2,79 +2,42 @@
 
 ![new_pipeline](new_pipeline.png)
 
-This project implements a Retrieval-Augmented Generation (RAG) pipeline to intelligently map a patient's outpatient medications to their corresponding medical problems. It is designed to be resilient to incomplete or inconsistent patient data by leveraging external knowledge from a FHIR server and the clinical reasoning capabilities of a Large Language Model (LLM).
+# ⚕️ Medical RAG (Retrieval-Augmented Generation) System
 
-The primary goal is to take a list of patient records and produce a structured summary that accurately links each medication to the specific condition it treats.
+This repository implements a **Hybrid Retrieval-Augmented Generation (RAG)** system designed for clinical decision support. It uses a **local, domain-specific vector store (PubMedBERT + Faiss)** for grounded knowledge retrieval and the **Gemini API** for high-performance, structured JSON generation.
 
-## How It Works: The RAG Pipeline
+The system's goal is to accurately match patient-specific medications to their historical problems using external clinical facts, minimizing hallucinations and grounding results in evidence.
 
-The script processes each patient record through a multi-step pipeline that combines data retrieval with AI-powered generation and analysis.
+---
 
-### 1\. Data Ingestion & Extraction
+## ⚙️ System Architecture Overview
 
-The process begins by loading patient data from a CSV file (`chest_pain_patients.csv`). For each patient, the script extracts their list of `Outpatient_Medications` and `Past_Medical_History`.
+The RAG pipeline operates in two main phases: **Indexing** (one-time setup) and **Querying** (per-medication execution).
 
-### 2\. Retrieval: Medication Standardization
 
-For each medication name extracted, the pipeline performs the **Retrieval** step. It queries a public HAPI FHIR server to fetch a standardized name and, most importantly, the medication's primary clinical **indication** (the condition it is meant to treat). This step grounds the agent with factual, external medical knowledge.
 
-### 3\. Augment & Generate: LLM-Based Reasoning
+---
 
-This is the **Augmented Generation** step. The retrieved indication is combined with the patient's specific problem list and sent to an LLM (GPT-4). The LLM is prompted to:
+## 1. Phase I: Knowledge Indexing (The Retriever Setup)
 
-  * Confirm the medication's **`primary_indication`**.
-  * Identify which problems from the patient's list are treated by the medication (`treated_problems_from_list`).
+This phase prepares the **`knowledge_base.txt`** for rapid semantic search. This process is handled by **`retriever_setup.py`** and runs upon initial execution.
 
-The LLM acts as a clinical reasoning engine to analyze the retrieved data in the context of the patient's record.
+| Step | Component | Action | Key Technology |
+| :--- | :--- | :--- | :--- |
+| **1. Load Data** | `knowledge_base.txt` | External medical facts are loaded and split into small text chunks. | N/A |
+| **2. Embedding** | **PubMedBERT** | Each text chunk is converted into a high-dimensional numerical vector. | **`sentence-transformers`** |
+| **3. Indexing** | **Faiss Index** | The generated vectors are stored in a data structure optimized for quick similarity lookups. | **`faiss-cpu`** |
 
-### 4\. Gap-Filling & Output
+---
 
-The script applies a final layer of logic to the LLM's response:
+## 2. Phase II: Per-Patient Querying (The RAG Loop)
 
-  * If the LLM finds a direct match in the patient's problem list, that match is recorded.
-  * If **no match is found** (indicating an incomplete patient record), the script **trusts the `primary_indication` identified by the LLM** and uses it to fill the gap.
+This phase executes for every medication (`updated_main.py` loop), retrieving context and generating the final structured output.
 
-The final, clean mappings are then saved to an output CSV file (`Mapping/medication_problem_agent_mapping_summary.csv`).
-
-## Key Technologies
-
-  * **Python**: Core programming language.
-  * **Pandas**: For data loading and manipulation.
-  * **OpenAI API (GPT-4)**: Serves as the core reasoning engine for mapping and gap-filling.
-  * **FHIR (HAPI FHIR Server)**: Used as the external knowledge base for retrieving standardized medication indications.
-  * **`fhirclient`**: Python client for interacting with the FHIR server.
-  * **`fuzzywuzzy`**: For robust matching between the LLM's output and the patient's problem list.
-
-## Setup and Usage
-
-### 1\. Prerequisites
-
-  * Python 3.9+
-
-### 2\. Installation
-
-Clone the repository and install the required packages:
-
-```bash
-git clone <your-repo-url>
-cd <your-repo-directory>
-pip install -r requirements.txt
-```
-
-### 3\. Configuration
-
-Create a `.env` file in the root directory and add your OpenAI API key:
-
-```
-OPENAI_API_KEY="your_openai_api_key_here"
-```
-
-### 4\. Running the Script
-
-Execute the main script from your terminal:
-
-```bash
-python main.py
-```
-
-The script will process the patients defined in `main.py` (e.g., the first 4 rows) and save the results in the `Mapping/` directory.
+| Step | Component | Action | Output |
+| :--- | :--- | :--- | :--- |
+| **4. Query Formulation** | `build_agent_prompt` | A search query is created using the current **Medication Name** and its **Primary Indication**. | A precise search string. |
+| **5. Retrieval** | `retrieve_context` | The query is embedded and searched against the **Faiss Index**. The $\text{top k}$ most relevant clinical facts are returned. | **`CRITICAL CONTEXT`** (1-2 text chunks). |
+| **6. Prompt Augmentation** | `build_agent_prompt` | The retrieved facts are inserted into the LLM's prompt template alongside the patient's problem list. | A comprehensive prompt ready for generation. |
+| **7. Generation** | **Gemini API** (`query_with_retry`) | The augmented prompt is sent to the **`gemini-2.5-flash-lite`** model, which is instructed to base its answer *only* on the provided `CRITICAL CONTEXT`. | A structured **JSON** response (`primary_indication`, `direct_treatment`, `related_conditions`). |
+| **8. Validation** | `fuzzy_match_problems` | The lists returned by the LLM are checked against the patient's original problem list to prevent minor spelling errors or non-matching terms. | The final, validated mapping for the patient record. |
