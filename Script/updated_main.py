@@ -50,14 +50,12 @@ def process_patient(row):
         matched_direct = fuzzy_match_problems(direct_treatments, problems)
         matched_related = fuzzy_match_problems(related_conditions, problems)
 
-        # --- CORRECTED LOGIC TO BUILD THE FINAL MAPPING ---
+        # Final mapping
         final_mapping = []
         if matched_direct:
-            # CORRECTED: The list comprehension is now inside the extend() method
             final_mapping.extend([f"{p} (Direct)" for p in matched_direct])
         
         if matched_related:
-            # CORRECTED: The list comprehension is now inside the extend() method
             final_mapping.extend([f"{p} (Related)" for p in matched_related])
 
         # If after all that, no links were found, fall back to the primary indication

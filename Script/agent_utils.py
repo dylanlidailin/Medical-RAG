@@ -17,7 +17,6 @@ load_dotenv()
 
 # --- Setup for Gemini and FHIR Clients ---
 try:
-    # Use your existing API Key from the .env file
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 except Exception as e:
     print(f"Error configuring Gemini API. Make sure GOOGLE_API_KEY is set in your .env file. {e}")
@@ -28,7 +27,7 @@ fhir_settings = {
 }
 fhir_client = client.FHIRClient(settings=fhir_settings)
 
-# --- Retrieve FHIR Medication by Name (Unchanged) ---
+# --- Retrieve FHIR Medication by Name ---
 def get_fhir_medication(med_name: str) -> dict:
     """
     Retrieves medication info from a FHIR server. 
@@ -113,7 +112,7 @@ def query_with_retry(prompt: str, model="gemini-2.5-flash-lite") -> dict:
         print(f"Gemini API Error: {e}")
         return {"primary_indication": "Error", "direct_treatment": [], "related_conditions": []}
 
-# --- Fuzzy Match Output (Unchanged) ---
+# --- Fuzzy Match Output ---
 def fuzzy_match_problems(response_problems: list, patient_problems: list, threshold=80) -> list:
     """
     Performs fuzzy matching between problems found by the LLM and the patient's list.
