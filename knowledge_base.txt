@@ -1,0 +1,5 @@
+Amlodipine is a calcium channel blocker primarily used to treat **Hypertension** (high blood pressure) and **Coronary Artery Disease**, specifically to manage **Angina**. Common comorbidities associated with uncontrolled hypertension include Chronic Kidney Disease and Atrial Fibrillation.
+
+Metformin is the first-line medication for the treatment of **Type 2 Diabetes Mellitus**. It is also used off-label for Polycystic Ovary Syndrome. It is not indicated for the treatment of cardiac problems, but patients with Type 2 Diabetes have a high risk of developing cardiovascular disease.
+
+Aspirin (low-dose) is primarily used for its antiplatelet effects to prevent myocardial infarction (heart attack) and stroke in patients with existing **Cardiovascular Disease**. It may also be used in patients with a history of Transient Ischemic Attack (TIA).
