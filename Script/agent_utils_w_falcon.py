@@ -1,38 +1,68 @@
-# agent_utils.py
 import os
 import json
 import pandas as pd
 import numpy as np
 from fuzzywuzzy import fuzz
-# Re-adding the Gemini API import
-import google.generativeai as genai 
 from dotenv import load_dotenv
 from fhirclient import client
 from fhirclient.models import medication
 
-# --- KEEP Retriever Import ---
-from .retriever_setup import retrieve_context 
+# --- NEW IMPORTS for Falcon (Generator) ---
+from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
+import torch
+
+# --- NEW IMPORT for Retriever Integration ---
+from .retriever_setup import retrieve_context
 
 load_dotenv()
 
-# --- Setup for Gemini and FHIR Clients ---
-try:
-    # Use your existing API Key from the .env file
-    genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-except Exception as e:
-    print(f"Error configuring Gemini API. Make sure GOOGLE_API_KEY is set in your .env file. {e}")
-
+# --- Setup for FHIR Client (Unchanged) ---
+# ... (FHIR client setup remains the same)
 fhir_settings = {
     'app_id': 'my_medical_app',
     'api_base': 'https://hapi.fhir.org/baseR4'
 }
 fhir_client = client.FHIRClient(settings=fhir_settings)
 
+# --- Setup for Falcon Local Inference (Generator) ---
+# This block ensures the Falcon model is loaded only once when the script starts
+llm_pipeline = None # Initialize globally
+llm_tokenizer = None # Initialize globally
+try:
+    # Model configuration from previous discussion
+    MODEL_NAME = "tiiuae/falcon-7b-instruct" 
+    # Determine device: 0 for GPU, -1 for CPU (if no CUDA available)
+    DEVICE = 0 if torch.cuda.is_available() else -1
+    
+    # Initialize the tokenizer, model, and pipeline once
+    llm_tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    llm_model = AutoModelForCausalLM.from_pretrained(
+        MODEL_NAME, 
+        trust_remote_code=True,
+        torch_dtype=torch.bfloat16, # Use bfloat16 for modern GPUs
+        device_map="auto" # Distribute model across available resources
+    )
+    llm_pipeline = pipeline(
+        "text-generation",
+        model=llm_model,
+        tokenizer=llm_tokenizer,
+        device=DEVICE,
+        max_new_tokens=512, 
+        do_sample=False,
+        eos_token_id=llm_tokenizer.eos_token_id
+    )
+    print(f"Loaded Falcon model {MODEL_NAME} for local inference on device: {DEVICE}")
+
+except Exception as e:
+    print(f"Error setting up local LLM inference. Ensure 'transformers', 'torch', and 'accelerate' are installed. Fallback to None. {e}")
+
+
 # --- Retrieve FHIR Medication by Name (Unchanged) ---
 def get_fhir_medication(med_name: str) -> dict:
     """
-    Retrieves medication info from a FHIR server. 
+    Retrieves medication info from a FHIR server. (Unchanged for brevity)
     """
+    # ... (function body remains the same as your previous code)
     try:
         search_params = {'code:text': med_name}
         response_bundle = medication.Medication.where(struct=search_params).perform(fhir_client.server)
@@ -55,17 +85,18 @@ def get_fhir_medication(med_name: str) -> dict:
 
 
 # --- Prompt Construction (RAG-Enabled) ---
-# This is the RAG-enabled function using the local retriever
+# THIS FUNCTION IS UPDATED to include the retrieval step
 def build_agent_prompt(med_name: str, med_indication: str, problems: list) -> str:
     """
     Builds the RAG prompt by retrieving context related to the medication
-    and inserting it into the prompt for the Gemini LLM.
+    and inserting it into the prompt for the Falcon LLM.
     """
     problem_list_str = ", ".join(f'"{p}"' for p in problems)
     
     # --- RAG: Retrieval Step (Uses PubMedBERT/Faiss) ---
     retrieval_query = f"Clinical use and comorbidities for {med_name} and its indication {med_indication}"
-    retrieved_context = retrieve_context(retrieval_query, top_k=2)
+    # Use the function imported from retriever_setup.py
+    retrieved_context = retrieve_context(retrieval_query, top_k=2) 
     context_str = "\n".join([f"- {c}" for c in retrieved_context])
     
     return (
@@ -88,35 +119,57 @@ def build_agent_prompt(med_name: str, med_indication: str, problems: list) -> st
         'Example: {"primary_indication": "Hypertension", "direct_treatment": ["Hypertension"], "related_conditions": ["Chronic Kidney Disease"]}'
     )
 
-# --- Call Gemini with Retry Strategy (Reverted to API) ---
-def query_with_retry(prompt: str, model="gemini-2.5-flash-lite") -> dict:
-    """
-    Queries the Gemini API and returns the structured dictionary.
-    """
-    try:
-        generation_config = {
-            "temperature": 0.0,
-            "response_mime_type": "application/json",
-        }
-        
-        gemini_model = genai.GenerativeModel(
-            model_name=model, 
-            generation_config=generation_config,
-            system_instruction="You are a clinical decision support assistant that outputs JSON."
-        )
 
-        response = gemini_model.generate_content(prompt)
+# --- Call Local LLM with Retry Strategy ---
+# THIS FUNCTION IS REPLACED to use the local Falcon pipeline
+def query_with_retry(prompt: str) -> dict:
+    """
+    Queries the local Falcon LLM pipeline and returns the structured dictionary.
+    """
+    # Check if the model failed to load during setup
+    if llm_pipeline is None or llm_tokenizer is None:
+        print("Local Falcon pipeline not loaded. Returning fallback error.")
+        return {"primary_indication": "Error", "direct_treatment": [], "related_conditions": []}
+
+    try:
+        # 1. Format the prompt using a chat template (required for instruct models like Falcon)
+        messages = [
+            {"role": "user", "content": prompt}
+        ]
         
-        return json.loads(response.text)
-    
+        # Apply the chat template to turn the list of dicts into a single prompt string
+        prompt_text = llm_tokenizer.apply_chat_template(
+            messages, 
+            tokenize=False, 
+            add_generation_prompt=True
+        )
+        
+        # 2. Generate the content using the pipeline
+        output = llm_pipeline(prompt_text, num_return_sequences=1)
+        
+        # 3. Extract the generated text and remove the prompt repetition
+        generated_text = output[0]['generated_text']
+        response_text = generated_text.replace(prompt_text, "", 1).strip()
+        
+        # 4. Find the JSON object in the response text and parse it
+        json_start = response_text.find('{')
+        json_end = response_text.rfind('}')
+        
+        if json_start != -1 and json_end != -1 and json_end > json_start:
+            json_str = response_text[json_start : json_end + 1]
+            return json.loads(json_str)
+        else:
+            print(f"Could not find or parse JSON from response: {response_text}")
+            return {"primary_indication": "Parse Error", "direct_treatment": [], "related_conditions": []}
+
     except Exception as e:
-        print(f"Gemini API Error: {e}")
+        print(f"Local LLM Generation Error: {e}")
         return {"primary_indication": "Error", "direct_treatment": [], "related_conditions": []}
 
 # --- Fuzzy Match Output (Unchanged) ---
 def fuzzy_match_problems(response_problems: list, patient_problems: list, threshold=80) -> list:
     """
-    Performs fuzzy matching between problems found by the LLM and the patient's list.
+    (This function is unchanged for brevity)
     """
     matched = []
     for p_patient in patient_problems:
